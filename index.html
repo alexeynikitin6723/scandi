@@ -5,6 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style/normalize.css">
+	<link rel="stylesheet" href="./style/style.css">
 	<title>SCANDI</title>
 </head>
 
@@ -15,19 +20,19 @@
 				<a href="#" class="header__logo">SCANDI</a>
 				<nav class="header__menu menu">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Портфолио</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Отзывы клиентов</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Оставить заявку</a></li>
+						<li class="menu__item"><a href="#about-company" class="menu__link">О компании</a></li>
+						<li class="menu__item"><a href="#portfolio" class="menu__link">Портфолио</a></li>
+						<li class="menu__item"><a href="#team" class="menu__link">Команда</a></li>
+						<li class="menu__item"><a href="#how-we-work" class="menu__link">Как мы работаем</a></li>
+						<li class="menu__item"><a href="#feedback" class="menu__link">Отзывы клиентов</a></li>
+						<li class="menu__item"><a href="#request" class="menu__link">Оставить заявку</a></li>
 					</ul>
 				</nav>
 				<a href="tel:+79818574624" class="header__phone">+7 (981) 857-46-24</a>
 			</div>
 		</header>
 		<main class="page">
-			<div class="page__main-block main-block">
+			<div class="page__main-block main-block" id="about-company">
 				<div class="main-block__container container">
 					<div class="main-block__body">
 						<h1 class="main-block__title">Поможем сделать
@@ -36,14 +41,14 @@
 						<p class="main-block__text">Подбираем текстиль, мебель и аксессуары
 							под ваш интерьер, находим магазины
 							и помогаем организовать доставку </p>
-						<button type="submit" class="main-block__button button">Оставить заявку</button>
+						<a href="#request" class="main-block__button button">Оставить заявку</a>
 					</div>
-					<div class="main-block__image _ibg">
+					<div class="main-block__image ibg">
 						<img src="./img/cover.jpg" alt="cover">
 					</div>
 				</div>
 			</div>
-			<section class="page__about-us about-us">
+			<section class="page__about-us about-us" id="about-us">
 				<div class="about-us__header">
 					<div class="about-us__container container">
 						<div class="about-us__body">
@@ -52,12 +57,15 @@
 								<div class="about-us__image">
 									<img src="./img/about-us/01.jpg" alt="service">
 								</div>
-								<p class="about-us__text">Премиальный европейский текстиль — одно из самых главных направлений работы
-									коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим
-									деталям — вот то, что по-настоящему вдохновляет дизайнеров нашей студии.<br>
-									Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:
-									« Да! Это именно то, что действительно достойно моего дома!»
-								</p>
+								<div class="about-us__text">
+									<p>Премиальный европейский текстиль — одно из самых главных направлений работы
+										коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим
+										деталям — вот то, что по-настоящему вдохновляет дизайнеров нашей студии.</p>
+									<p>
+										Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:
+										« Да! Это именно то, что действительно достойно моего дома!»
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -81,7 +89,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__our-work our-work">
+			<section class="page__our-work our-work" id="portfolio">
 				<div class="our-work__container container">
 					<div class="our-work__body">
 						<h2 class="our-work__title title">Наши работы</h2>
@@ -94,11 +102,11 @@
 									<p class="card-work__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
 										на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
 								</div>
-								<div class="our-work__image ibg">
+								<div class="our-work__image">
 									<img src="./img/our-work/01.jpg" alt="image apartment">
 								</div>
 							</div>
-							<div class="our-work__item">
+							<div class="our-work__item our-work__item_b">
 								<div class="our-work__content card-work">
 									<h3 class="card-work__title">Квартира-студия
 										30 кв.м.
@@ -106,11 +114,11 @@
 									<p class="card-work__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
 										на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
 								</div>
-								<div class="our-work__image ibg">
+								<div class="our-work__image">
 									<img src="./img/our-work/02.jpg" alt="image apartment">
 								</div>
 							</div>
-							<div class="our-work__item">
+							<div class="our-work__item our-work__item_b">
 								<div class="our-work__content card-work">
 									<h3 class="card-work__title">Квартира-студия
 										30 кв.м.
@@ -118,7 +126,7 @@
 									<p class="card-work__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
 										на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
 								</div>
-								<div class="our-work__image ibg">
+								<div class="our-work__image">
 									<img src="./img/our-work/03.jpg" alt="image apartment">
 								</div>
 							</div>
@@ -130,7 +138,7 @@
 									<p class="card-work__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
 										на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
 								</div>
-								<div class="our-work__image ibg">
+								<div class="our-work__image">
 									<img src="./img/our-work/04.jpg" alt="image apartment">
 								</div>
 							</div>
@@ -139,13 +147,13 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__team team">
+			<section class="page__team team" id="team">
 				<div class="team__container container">
 					<div class="team__body">
 						<h2 class="team__title title">Команда</h2>
 						<div class="team__row">
 							<div class="team__item item">
-								<div class="item__image ibg">
+								<div class="item__image">
 									<img src="./img/team/01.jpg" alt="our employee">
 								</div>
 								<p class="item__description">
@@ -154,7 +162,7 @@
 								</p>
 							</div>
 							<div class="team__item item">
-								<div class="item__image ibg">
+								<div class="item__image">
 									<img src="./img/team/02.jpg" alt="our employee">
 								</div>
 								<p class="item__description">
@@ -164,7 +172,7 @@
 								</p>
 							</div>
 							<div class="team__item item">
-								<div class="item__image ibg">
+								<div class="item__image">
 									<img src="./img/team/03.jpg" alt="our employee">
 								</div>
 								<p class="item__description">
@@ -178,7 +186,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__how-we-work how-we-work">
+			<section class="page__how-we-work how-we-work" id="how-we-work">
 				<div class="how-we-work__container container">
 					<div class="how-we-work__body">
 						<h2 class="how-we-work__title title">Как мы работаем</h2>
@@ -207,22 +215,25 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__feedback feedback">
+			<section class="page__feedback feedback" id="feedback">
 				<div class="feedback__container container">
 					<div class="feedback__body">
-						<h2 class="feedback__title title"></h2>
+						<h2 class="feedback__title title">Отзывы</h2>
 						<div class="feedback__slider slider">
 							<a href="#" class="arrow-left"></a>
 							<div class="slider__body">
 								<figure>
 									<blockquote class="slider__text">
-										«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего
-										дома.
-
-										Работа шла быстро, было очень приятно общаться и взаимодествовать
-										с сотрудниками. Не ожидала, что это будет так легко!
-
-										Буду советовать и своим друзьям к вам обращаться!»
+										<p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего
+											дома.
+										</p>
+										<p>
+											Работа шла быстро, было очень приятно общаться и взаимодествовать
+											с сотрудниками. Не ожидала, что это будет так легко!
+										</p>
+										<p>
+											Буду советовать и своим друзьям к вам обращаться!»
+										</p>
 									</blockquote>
 									<figcaption class="slider__signature">
 										АННА БЕЛОВСКАЯ
@@ -230,10 +241,10 @@
 								</figure>
 							</div>
 							<div class="slider__images">
-								<div class="slider__image ibg">
+								<div class="slider__image">
 									<img src="./img/feedback/01.jpg" alt="image apartment">
 								</div>
-								<div class="slider__image ibg">
+								<div class="slider__image">
 									<img src="./img/feedback/02.jpg" alt="image apartment">
 								</div>
 							</div>
@@ -242,19 +253,20 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__map map">
+			<section class="page__map map" id="request">
 				<div class="map__container container">
 					<div class="map__body">
 						<div class="map__column">
-							<h2 class="map__title"></h2>
-							<p class="map__text"></p>
+							<h2 class="map__title title">Оставить заявку</h2>
+							<p class="map__text">Оставьте свои контакты. Менеджер перезвонит
+								в удобное вам время и ответит на все вопросы.</p>
 							<form action="#" class="map__form">
 								<input type="text" class="form__name" placeholder="Ваше имя">
 								<input type="tel" class="form__phone" placeholder="Введите телефон">
 								<button type="submit" class="form__button button">Оставить заявку</button>
 							</form>
 						</div>
-						<div class="map__column ibg">
+						<div class="map__column">
 							<a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&z=16.33"
 								class="map__link">
 								<img src="./img/map/map.jpg" alt="г. Санкт-петербург, ул. Большая Конюшенная, 19">
@@ -264,7 +276,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="footer__container container">
 				<ul class="footer__list">
 					<li class="footer__item">
